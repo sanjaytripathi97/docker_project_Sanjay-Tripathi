@@ -6,12 +6,13 @@ With own cloud you pick a server of your choice, at home, in a data center or at
 the images support multiple architectures such as x86-64, arm64 and armhf. i utilize the docker for multi-platform.
 
 this is the command line code you can use in redhat  or centos8 to run:-
-   ## docker create --name=nextcloud -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -p 443:443 -v /path/to/appdata:/config -v /path/to                  /data:/data --restart unless-stopped      linuxserver/nextcloud
+   # docker create --name=nextcloud -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -p 443:443 -v /path/to/appdata:/config -v /path/to                  /data:/data --restart unless-stopped      linuxserver/nextcloud
    
   # for docker-compose.yml
    make sure you have made the volume name config and data by cmd docker volume create nameOfVolume
    you can change port no. do not change port no of container.                                                                                                                                                                                                  
-                 version: "2.1"                                                                                                                                   
+                
+                version: "2.1"                                                                                                                                   
                      services:
                         cloudoS:                                                                                                                                
                            image: linuxserver/nextcloud                                                                                                                  
