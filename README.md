@@ -10,7 +10,7 @@ this is the command line code you can use in redhat  or centos8 to run:-
    
   # for docker-compose.yml
    make sure you have made the volume name config and data by cmd docker volume create nameOfVolume
-   you can change port no. do not change port no of container 
+   you can change port no. do not change port no of container.                                                                      
                  version: "2.1"
                   services:
                        cloudoS:
