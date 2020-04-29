@@ -10,16 +10,16 @@ this is the command line code you can use in redhat  or centos8 to run:-
    
   # for docker-compose.yml
    make sure you have made the volume name config and data by cmd docker volume create nameOfVolume
-   you can change port no. do not change port no of container.                                                                      
-                 version: "2.1"
+   you can change port no. do not change port no of container.                                                                                                                                                                                                  
+                 version: "2.1"                                                                                                                                   
                   services:
-                       cloudoS:
-                          image: linuxserver/nextcloud
-                          container_name: homeCloud
-                       environment:
-                         - PUID=1000
-                         - PGID=1000
-                         - TZ=Europe/London
+                       cloudoS:                                                                                                                                
+                          image: linuxserver/nextcloud                                                                                                                  
+                          container_name: homeCloud                                                                                                                  
+                       environment:                                                                                                                                  
+                         - PUID=1000                                                                                                                                          
+                         - PGID=1000                                                                                                                           
+                         - TZ=Europe/London                                                                                                                    
                        volumes:
                          - config:/config
                          - data:/data
